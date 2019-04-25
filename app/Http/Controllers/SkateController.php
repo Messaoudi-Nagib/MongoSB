@@ -14,6 +14,12 @@ class SkateController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth')->except('index','show');
+    }
+
+
     public function index()
     {
         $skates = Skate::all();
@@ -27,7 +33,8 @@ class SkateController extends Controller
      */
     public function create()
     {
-        return view('skate.create');
+        $skates = Skate::all();
+        return view('skate.create', compact('skates'));
     }
 
     /**

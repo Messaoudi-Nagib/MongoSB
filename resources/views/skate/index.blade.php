@@ -1,6 +1,4 @@
-@extends('layout.home')
-
-@section('title')
+@extends('layouts.app')@section('title')
     Skateboards
 @endsection
 
@@ -14,7 +12,7 @@
     <div class="row">
         @foreach($skates as $skate)
 
-    <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 mb-3">
         @if($skate->type  == 'longboard')
         <div class="card bg-light text-black mt-5">
             @else
@@ -33,23 +31,28 @@
                     </p>
 
                         @if($skate->type  == 'longboard')
+                        <a href="{{ route('skate.show', $skate->id) }}"><button class="btn btn-light mb-4">Voir la description</button> </a>
                         <form action="{{route('skate.destroy', $skate->id)}}" method="POST">
                             {{method_field('DELETE')}}
                             {{csrf_field()}}
                             <input type="submit" class="btn btn-danger" value="Supprimer l'article ?"/>
                         </form>
+
 
 
 
 
 
                     @else
+                        <a href="{{ route('skate.show', $skate->id) }}"><button class="btn btn-dark mb-4">Voir la description</button> </a>
                         <form action="{{route('skate.destroy', $skate->id)}}" method="POST">
                             {{method_field('DELETE')}}
                             {{csrf_field()}}
                             <input type="submit" class="btn btn-danger" value="Supprimer l'article ?"/>
                         </form>
-                        @endif
+
+
+                    @endif
 
 
 
@@ -61,7 +64,6 @@
             @endforeach
     </div>
     </div>
-
 
 
 

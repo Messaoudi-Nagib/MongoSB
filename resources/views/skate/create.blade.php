@@ -1,6 +1,4 @@
-@extends('layout.home')
-
-@section('content')
+@extends('layouts.app')@section('content')
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
             <h2>Créer un nouveau skate</h2>
@@ -19,7 +17,11 @@
                 <label for="size">Taille de board </label>
                 <select class="form-control" id="size" name="size">
                     <option>7</option>
+                    <option>7.25</option>
+                    <option>7.5</option>
                     <option>8</option>
+                    <option>8.25</option>
+                    <option>8.5</option>
                 </select>
             </div>
 

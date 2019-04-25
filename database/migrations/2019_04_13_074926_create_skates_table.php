@@ -16,7 +16,7 @@ class CreateSkatesTable extends Migration
         Schema::create('skates', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->char('model');
-            $table->integer('size');
+            $table->float('size');
             $table->enum('type', ['skate', 'longboard', 'pennyboard']);
             $table->integer('price');
             $table->text('description');

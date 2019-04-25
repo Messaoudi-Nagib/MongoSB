@@ -1,6 +1,4 @@
-@extends('layout.home')
-
-@section('title', 'Shop')
+@extends('layouts.app')@section('title', 'Shop')
 
 
 @section('content')

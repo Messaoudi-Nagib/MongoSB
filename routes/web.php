@@ -24,3 +24,7 @@ Route::resource ('skate', 'SkateController', [
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'ShopController@accueil')->name('home');
