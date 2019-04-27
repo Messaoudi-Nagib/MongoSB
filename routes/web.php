@@ -21,6 +21,13 @@ Route::resource ('skate', 'SkateController', [
     'only' => ['index','edit', 'update', 'show', 'create', 'store', 'destroy']
 ]);
 
+//Route::resource ('tool', 'ToolController', [
+//    'only' => ['index','edit', 'update', 'show', 'create', 'store', 'destroy', 'all']
+//]);
+
+
+Route::get("/tool", "ToolController@index")->name('tool.index');
+Route::get("/tool/{id}", "ToolController@all")->name('tool.all');
 
 
 

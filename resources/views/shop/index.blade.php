@@ -8,7 +8,7 @@
     </div>
 
     <div class="row mt-5">
-        <div class="col-6">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card bg-dark text-white">
                 <div class="card-title">
                     <h3 class="mt-2 ml-2">Skates</h3>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="col-6">
+        <div class="div-mob col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card bg-light text-dark">
                 <div class="card-title">
                     <h3 class="mt-2 ml-2">Accessoires</h3>
@@ -39,7 +39,7 @@
 
                         </p>
                         <div class="col-3">
-                            <a href=" {{ route('shop.index') }}"><button class="btn btn-light">Découvrir ! </button></a>
+                            <a href=" {{ route('tool.index') }}"><button class="btn btn-light">Découvrir ! </button></a>
                         </div>
                     </div>
                 </div>

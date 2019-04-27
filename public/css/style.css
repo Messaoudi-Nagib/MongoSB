@@ -48,13 +48,22 @@
     .p-cstm{
         position: relative;
         left: 10%;
-        top: 35%;
+        top: 27%;
         width: 40%;
         font-size: 1.5em;
-        line-height: 25px;
-
-
+        line-height: 32px;
     }
+
+
+    .div-mob{
+        margin-top: 20px;
+    }
+}
+
+
+
+body{
+    font-size: 1.1em;
 }
 
 .row-full{
