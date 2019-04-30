@@ -22,8 +22,9 @@ class ToolController extends Controller
 
     public function all($id){
 
-        $tools = Tool::where('id', $id)->get();
-        return view('tool.all', compact('tools'));
+        $categ = Categorie::where('id', $id)->first();
+        // $tools = Tool::where('id', $id)->get();
+        return view('tool.all', compact('categ'));
     }
 
     /**

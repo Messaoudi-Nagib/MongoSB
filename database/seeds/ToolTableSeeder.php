@@ -32,5 +32,10 @@ class ToolTableSeeder extends Seeder
             'prix' => '25',
             'categ_id' => '4'
         ]);
+       DB::table('tools')->insert([
+            'libelle' => 'Roulements ABEC 5 chrome',
+            'prix' => '15',
+            'categ_id' => '4'
+        ]);
     }
 }

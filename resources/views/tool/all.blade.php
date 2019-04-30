@@ -5,8 +5,18 @@
 @section('content')
 
     <div class="row">
+        <h2 class="mx-auto mb-5">
+
+            {{ $categ->Libelle }}
+
+        </h2>
+
+    </div>
+
+    <div class="row">
+        @foreach($categ->tools as $tool)
+
         <div class="col-4">
-            @foreach($tools as $tool)
                 <div class="card ">
                     <div class="card-title pl-1">
                         {{$tool->libelle }}
@@ -17,11 +27,9 @@
                     </div>
 
                 </div>
-                @endforeach
         </div>
+        @endforeach
 
     </div>
-
-
 
     @endsection

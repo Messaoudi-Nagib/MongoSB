@@ -11,14 +11,10 @@
     clip-path: polygon(8% 0%, 100% 0%, 95% 100%, 0% 100%);
     background-color: #D3EBFF;
     border-radius: 5px;
+    box-shadow: 0 -5px 5px -5px #333;
 }
 
-@keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-}
+
 
 .div-full{
     width: 100%;
